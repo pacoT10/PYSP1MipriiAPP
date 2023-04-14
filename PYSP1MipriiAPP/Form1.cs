@@ -16,5 +16,15 @@ namespace PYSP1MipriiAPP
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Deposito_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
