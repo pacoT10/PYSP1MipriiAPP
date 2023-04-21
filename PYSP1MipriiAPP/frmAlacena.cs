@@ -10,21 +10,26 @@ using System.Windows.Forms;
 
 namespace PYSP1MipriiAPP
 {
-    public partial class Form1 : Form
+    public partial class frmCargaDeDatosEnLaAlacena : Form
     {
-        public Form1()
+        public frmCargaDeDatosEnLaAlacena()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Deposito_Click(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmdMenu_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
