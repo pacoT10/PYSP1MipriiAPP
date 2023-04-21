@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.mrcIngreso = new System.Windows.Forms.GroupBox();
-            this.lblDeposito = new System.Windows.Forms.Label();
             this.txtDeposito = new System.Windows.Forms.TextBox();
+            this.lblDeposito = new System.Windows.Forms.Label();
             this.mrcGastos = new System.Windows.Forms.GroupBox();
-            this.lblAlquiler = new System.Windows.Forms.Label();
-            this.txtAlquiler = new System.Windows.Forms.TextBox();
-            this.lblImpuestos = new System.Windows.Forms.Label();
-            this.txtImpuesto = new System.Windows.Forms.TextBox();
-            this.lblComida = new System.Windows.Forms.Label();
-            this.txtComida = new System.Windows.Forms.TextBox();
-            this.lblOtrosgastos = new System.Windows.Forms.Label();
             this.txtOtrosgastos = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblOtrosgastos = new System.Windows.Forms.Label();
+            this.txtComida = new System.Windows.Forms.TextBox();
+            this.lblComida = new System.Windows.Forms.Label();
+            this.txtImpuesto = new System.Windows.Forms.TextBox();
+            this.lblImpuestos = new System.Windows.Forms.Label();
+            this.txtAlquiler = new System.Windows.Forms.TextBox();
+            this.lblAlquiler = new System.Windows.Forms.Label();
+            this.CmdCalcular = new System.Windows.Forms.Button();
+            this.cmdCancelar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.mrcIngreso.SuspendLayout();
@@ -61,6 +62,13 @@
             this.mrcIngreso.TabStop = false;
             this.mrcIngreso.Text = "Ingresos";
             // 
+            // txtDeposito
+            // 
+            this.txtDeposito.Location = new System.Drawing.Point(6, 43);
+            this.txtDeposito.Name = "txtDeposito";
+            this.txtDeposito.Size = new System.Drawing.Size(143, 22);
+            this.txtDeposito.TabIndex = 1;
+            // 
             // lblDeposito
             // 
             this.lblDeposito.AutoSize = true;
@@ -71,13 +79,6 @@
             this.lblDeposito.TabIndex = 0;
             this.lblDeposito.Text = "Deposito";
             this.lblDeposito.Click += new System.EventHandler(this.Deposito_Click);
-            // 
-            // txtDeposito
-            // 
-            this.txtDeposito.Location = new System.Drawing.Point(6, 43);
-            this.txtDeposito.Name = "txtDeposito";
-            this.txtDeposito.Size = new System.Drawing.Size(143, 22);
-            this.txtDeposito.TabIndex = 1;
             // 
             // mrcGastos
             // 
@@ -98,56 +99,12 @@
             this.mrcGastos.TabStop = false;
             this.mrcGastos.Text = "Gastos";
             // 
-            // lblAlquiler
+            // txtOtrosgastos
             // 
-            this.lblAlquiler.AutoSize = true;
-            this.lblAlquiler.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlquiler.Location = new System.Drawing.Point(76, 14);
-            this.lblAlquiler.Name = "lblAlquiler";
-            this.lblAlquiler.Size = new System.Drawing.Size(84, 25);
-            this.lblAlquiler.TabIndex = 0;
-            this.lblAlquiler.Text = "Alquiler";
-            // 
-            // txtAlquiler
-            // 
-            this.txtAlquiler.Location = new System.Drawing.Point(52, 42);
-            this.txtAlquiler.Name = "txtAlquiler";
-            this.txtAlquiler.Size = new System.Drawing.Size(143, 22);
-            this.txtAlquiler.TabIndex = 1;
-            // 
-            // lblImpuestos
-            // 
-            this.lblImpuestos.AutoSize = true;
-            this.lblImpuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImpuestos.Location = new System.Drawing.Point(71, 67);
-            this.lblImpuestos.Name = "lblImpuestos";
-            this.lblImpuestos.Size = new System.Drawing.Size(110, 25);
-            this.lblImpuestos.TabIndex = 2;
-            this.lblImpuestos.Text = "Impuestos";
-            // 
-            // txtImpuesto
-            // 
-            this.txtImpuesto.Location = new System.Drawing.Point(52, 95);
-            this.txtImpuesto.Name = "txtImpuesto";
-            this.txtImpuesto.Size = new System.Drawing.Size(143, 22);
-            this.txtImpuesto.TabIndex = 3;
-            // 
-            // lblComida
-            // 
-            this.lblComida.AutoSize = true;
-            this.lblComida.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComida.Location = new System.Drawing.Point(71, 125);
-            this.lblComida.Name = "lblComida";
-            this.lblComida.Size = new System.Drawing.Size(85, 25);
-            this.lblComida.TabIndex = 4;
-            this.lblComida.Text = "Comida";
-            // 
-            // txtComida
-            // 
-            this.txtComida.Location = new System.Drawing.Point(52, 153);
-            this.txtComida.Name = "txtComida";
-            this.txtComida.Size = new System.Drawing.Size(143, 22);
-            this.txtComida.TabIndex = 5;
+            this.txtOtrosgastos.Location = new System.Drawing.Point(52, 206);
+            this.txtOtrosgastos.Name = "txtOtrosgastos";
+            this.txtOtrosgastos.Size = new System.Drawing.Size(149, 22);
+            this.txtOtrosgastos.TabIndex = 7;
             // 
             // lblOtrosgastos
             // 
@@ -159,32 +116,76 @@
             this.lblOtrosgastos.TabIndex = 6;
             this.lblOtrosgastos.Text = "Otros gastos";
             // 
-            // txtOtrosgastos
+            // txtComida
             // 
-            this.txtOtrosgastos.Location = new System.Drawing.Point(52, 206);
-            this.txtOtrosgastos.Name = "txtOtrosgastos";
-            this.txtOtrosgastos.Size = new System.Drawing.Size(149, 22);
-            this.txtOtrosgastos.TabIndex = 7;
+            this.txtComida.Location = new System.Drawing.Point(52, 153);
+            this.txtComida.Name = "txtComida";
+            this.txtComida.Size = new System.Drawing.Size(143, 22);
+            this.txtComida.TabIndex = 5;
             // 
-            // button1
+            // lblComida
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(6, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblComida.AutoSize = true;
+            this.lblComida.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComida.Location = new System.Drawing.Point(71, 125);
+            this.lblComida.Name = "lblComida";
+            this.lblComida.Size = new System.Drawing.Size(85, 25);
+            this.lblComida.TabIndex = 4;
+            this.lblComida.Text = "Comida";
             // 
-            // button2
+            // txtImpuesto
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(169, 342);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 35);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.txtImpuesto.Location = new System.Drawing.Point(52, 95);
+            this.txtImpuesto.Name = "txtImpuesto";
+            this.txtImpuesto.Size = new System.Drawing.Size(143, 22);
+            this.txtImpuesto.TabIndex = 3;
+            // 
+            // lblImpuestos
+            // 
+            this.lblImpuestos.AutoSize = true;
+            this.lblImpuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImpuestos.Location = new System.Drawing.Point(71, 67);
+            this.lblImpuestos.Name = "lblImpuestos";
+            this.lblImpuestos.Size = new System.Drawing.Size(110, 25);
+            this.lblImpuestos.TabIndex = 2;
+            this.lblImpuestos.Text = "Impuestos";
+            // 
+            // txtAlquiler
+            // 
+            this.txtAlquiler.Location = new System.Drawing.Point(52, 42);
+            this.txtAlquiler.Name = "txtAlquiler";
+            this.txtAlquiler.Size = new System.Drawing.Size(143, 22);
+            this.txtAlquiler.TabIndex = 1;
+            // 
+            // lblAlquiler
+            // 
+            this.lblAlquiler.AutoSize = true;
+            this.lblAlquiler.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlquiler.Location = new System.Drawing.Point(76, 14);
+            this.lblAlquiler.Name = "lblAlquiler";
+            this.lblAlquiler.Size = new System.Drawing.Size(84, 25);
+            this.lblAlquiler.TabIndex = 0;
+            this.lblAlquiler.Text = "Alquiler";
+            // 
+            // CmdCalcular
+            // 
+            this.CmdCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdCalcular.Location = new System.Drawing.Point(6, 342);
+            this.CmdCalcular.Name = "CmdCalcular";
+            this.CmdCalcular.Size = new System.Drawing.Size(87, 35);
+            this.CmdCalcular.TabIndex = 2;
+            this.CmdCalcular.Text = "Calcular";
+            this.CmdCalcular.UseVisualStyleBackColor = true;
+            // 
+            // cmdCancelar
+            // 
+            this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancelar.Location = new System.Drawing.Point(169, 342);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(107, 35);
+            this.cmdCancelar.TabIndex = 3;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -213,10 +214,11 @@
             this.ClientSize = new System.Drawing.Size(285, 421);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdCancelar);
+            this.Controls.Add(this.CmdCalcular);
             this.Controls.Add(this.mrcGastos);
             this.Controls.Add(this.mrcIngreso);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Gasto Mensual";
             this.mrcIngreso.ResumeLayout(false);
@@ -242,8 +244,8 @@
         private System.Windows.Forms.Label lblImpuestos;
         private System.Windows.Forms.TextBox txtAlquiler;
         private System.Windows.Forms.Label lblAlquiler;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button CmdCalcular;
+        private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
     }
