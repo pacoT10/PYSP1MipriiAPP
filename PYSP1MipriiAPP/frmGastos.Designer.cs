@@ -44,7 +44,7 @@
             this.CmdCalcular = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.mrcIngreso.SuspendLayout();
             this.mrcGastos.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,7 @@
             this.mrcIngreso.TabIndex = 0;
             this.mrcIngreso.TabStop = false;
             this.mrcIngreso.Text = "Ingresos";
+            this.mrcIngreso.Enter += new System.EventHandler(this.mrcIngreso_Enter);
             // 
             // txtDeposito
             // 
@@ -122,6 +123,7 @@
             this.txtComida.Name = "txtComida";
             this.txtComida.Size = new System.Drawing.Size(143, 22);
             this.txtComida.TabIndex = 5;
+            this.txtComida.TextChanged += new System.EventHandler(this.txtComida_TextChanged);
             // 
             // lblComida
             // 
@@ -176,6 +178,7 @@
             this.CmdCalcular.TabIndex = 2;
             this.CmdCalcular.Text = "Calcular";
             this.CmdCalcular.UseVisualStyleBackColor = true;
+            this.CmdCalcular.Click += new System.EventHandler(this.CmdCalcular_Click);
             // 
             // cmdCancelar
             // 
@@ -197,30 +200,32 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Saldo restante:";
             // 
-            // label1
+            // lblResultado
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(125, 398);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "___________________";
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(125, 396);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(140, 16);
+            this.lblResultado.TabIndex = 5;
+            this.lblResultado.Text = "___________________";
             // 
-            // Form1
+            // frmGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(285, 421);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.CmdCalcular);
             this.Controls.Add(this.mrcGastos);
             this.Controls.Add(this.mrcIngreso);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "frmGastos";
             this.Text = "Gasto Mensual";
+            this.Load += new System.EventHandler(this.frmGastos_Load);
             this.mrcIngreso.ResumeLayout(false);
             this.mrcIngreso.PerformLayout();
             this.mrcGastos.ResumeLayout(false);
@@ -247,7 +252,7 @@
         private System.Windows.Forms.Button CmdCalcular;
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 
