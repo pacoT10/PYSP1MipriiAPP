@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PYSP1MiprimerApp", "PYSP1MipriiAPP\PYSP1MiprimerApp.csproj", "{9D4094BB-4654-4D37-8C50-C6BB777757D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prySP1MiprimerApp", "PYSP1MipriiAPP\prySP1MiprimerApp.csproj", "{9D4094BB-4654-4D37-8C50-C6BB777757D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

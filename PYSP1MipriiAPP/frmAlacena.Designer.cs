@@ -28,118 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mrcProductosPara = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.mrcLugar = new System.Windows.Forms.GroupBox();
+            this.optHeladera = new System.Windows.Forms.RadioButton();
+            this.optMedicamentos = new System.Windows.Forms.RadioButton();
+            this.optBaño = new System.Windows.Forms.RadioButton();
+            this.optLimpieza = new System.Windows.Forms.RadioButton();
+            this.optAlacena = new System.Windows.Forms.RadioButton();
+            this.lblProducto = new System.Windows.Forms.Label();
+            this.cboProducto = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.chkCaduca = new System.Windows.Forms.CheckBox();
             this.cmdGuardar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
-            this.cmdMenu = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.mrcProductosPara.SuspendLayout();
+            this.lstLista = new System.Windows.Forms.ListBox();
+            this.lblCompra = new System.Windows.Forms.Label();
+            this.mrcLugar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
-            // mrcProductosPara
+            // mrcLugar
             // 
-            this.mrcProductosPara.Controls.Add(this.radioButton5);
-            this.mrcProductosPara.Controls.Add(this.radioButton4);
-            this.mrcProductosPara.Controls.Add(this.radioButton3);
-            this.mrcProductosPara.Controls.Add(this.radioButton2);
-            this.mrcProductosPara.Controls.Add(this.radioButton1);
-            this.mrcProductosPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcProductosPara.Location = new System.Drawing.Point(10, 12);
-            this.mrcProductosPara.Name = "mrcProductosPara";
-            this.mrcProductosPara.Size = new System.Drawing.Size(363, 79);
-            this.mrcProductosPara.TabIndex = 0;
-            this.mrcProductosPara.TabStop = false;
-            this.mrcProductosPara.Text = "Productos para:";
+            this.mrcLugar.Controls.Add(this.optHeladera);
+            this.mrcLugar.Controls.Add(this.optMedicamentos);
+            this.mrcLugar.Controls.Add(this.optBaño);
+            this.mrcLugar.Controls.Add(this.optLimpieza);
+            this.mrcLugar.Controls.Add(this.optAlacena);
+            this.mrcLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcLugar.Location = new System.Drawing.Point(10, 12);
+            this.mrcLugar.Name = "mrcLugar";
+            this.mrcLugar.Size = new System.Drawing.Size(363, 79);
+            this.mrcLugar.TabIndex = 0;
+            this.mrcLugar.TabStop = false;
+            this.mrcLugar.Text = "Lugar:";
             // 
-            // radioButton5
+            // optHeladera
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(6, 48);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(72, 20);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Comida";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.optHeladera.AutoSize = true;
+            this.optHeladera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optHeladera.Location = new System.Drawing.Point(6, 48);
+            this.optHeladera.Name = "optHeladera";
+            this.optHeladera.Size = new System.Drawing.Size(82, 20);
+            this.optHeladera.TabIndex = 4;
+            this.optHeladera.TabStop = true;
+            this.optHeladera.Text = "Heladera";
+            this.optHeladera.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // optMedicamentos
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(236, 22);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(114, 20);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Medicamentos\r\n";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.optMedicamentos.AutoSize = true;
+            this.optMedicamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optMedicamentos.Location = new System.Drawing.Point(236, 22);
+            this.optMedicamentos.Name = "optMedicamentos";
+            this.optMedicamentos.Size = new System.Drawing.Size(114, 20);
+            this.optMedicamentos.TabIndex = 3;
+            this.optMedicamentos.TabStop = true;
+            this.optMedicamentos.Text = "Medicamentos\r\n";
+            this.optMedicamentos.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // optBaño
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(173, 22);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(57, 20);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Baño";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.optBaño.AutoSize = true;
+            this.optBaño.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optBaño.Location = new System.Drawing.Point(173, 22);
+            this.optBaño.Name = "optBaño";
+            this.optBaño.Size = new System.Drawing.Size(57, 20);
+            this.optBaño.TabIndex = 2;
+            this.optBaño.TabStop = true;
+            this.optBaño.Text = "Baño";
+            this.optBaño.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // optLimpieza
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(88, 22);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(79, 20);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Limpieza";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.optLimpieza.AutoSize = true;
+            this.optLimpieza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optLimpieza.Location = new System.Drawing.Point(88, 22);
+            this.optLimpieza.Name = "optLimpieza";
+            this.optLimpieza.Size = new System.Drawing.Size(79, 20);
+            this.optLimpieza.TabIndex = 1;
+            this.optLimpieza.TabStop = true;
+            this.optLimpieza.Text = "Limpieza";
+            this.optLimpieza.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // optAlacena
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(6, 22);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 20);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Cocina";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.optAlacena.AutoSize = true;
+            this.optAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optAlacena.Location = new System.Drawing.Point(6, 22);
+            this.optAlacena.Name = "optAlacena";
+            this.optAlacena.Size = new System.Drawing.Size(75, 20);
+            this.optAlacena.TabIndex = 0;
+            this.optAlacena.TabStop = true;
+            this.optAlacena.Text = "Alacena";
+            this.optAlacena.UseVisualStyleBackColor = true;
+            this.optAlacena.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // label1
+            // lblProducto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tipo";
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProducto.Location = new System.Drawing.Point(7, 98);
+            this.lblProducto.Name = "lblProducto";
+            this.lblProducto.Size = new System.Drawing.Size(61, 16);
+            this.lblProducto.TabIndex = 1;
+            this.lblProducto.Text = "Producto";
             // 
-            // comboBox1
+            // cboProducto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(54, 97);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cboProducto.FormattingEnabled = true;
+            this.cboProducto.Items.AddRange(new object[] {
+            "Galletas",
+            "Fideos",
+            "Leche",
+            "Huevos",
+            "Lavandina",
+            "Fiambre",
+            "Parecetamol",
+            "Loratadina",
+            "Trapo",
+            "Escobillon",
+            "Jabon",
+            "Detergente",
+            "Desodorante de ambiente"});
+            this.cboProducto.Location = new System.Drawing.Point(74, 97);
+            this.cboProducto.Name = "cboProducto";
+            this.cboProducto.Size = new System.Drawing.Size(117, 21);
+            this.cboProducto.TabIndex = 2;
             // 
             // numericUpDown1
             // 
@@ -148,54 +163,45 @@
             this.numericUpDown1.Size = new System.Drawing.Size(52, 20);
             this.numericUpDown1.TabIndex = 3;
             // 
-            // label2
+            // lblCantidad
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(197, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Cantidad";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(197, 102);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(61, 16);
+            this.lblCantidad.TabIndex = 4;
+            this.lblCantidad.Text = "Cantidad";
             // 
-            // checkBox1
+            // chkCaduca
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(15, 140);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(73, 20);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Caduca";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkCaduca.AutoSize = true;
+            this.chkCaduca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCaduca.Location = new System.Drawing.Point(6, 136);
+            this.chkCaduca.Name = "chkCaduca";
+            this.chkCaduca.Size = new System.Drawing.Size(87, 20);
+            this.chkCaduca.TabIndex = 5;
+            this.chkCaduca.Text = "¿Caduca?";
+            this.chkCaduca.UseVisualStyleBackColor = true;
             // 
             // cmdGuardar
             // 
-            this.cmdGuardar.Location = new System.Drawing.Point(255, 150);
+            this.cmdGuardar.Location = new System.Drawing.Point(285, 134);
             this.cmdGuardar.Name = "cmdGuardar";
             this.cmdGuardar.Size = new System.Drawing.Size(75, 23);
             this.cmdGuardar.TabIndex = 6;
             this.cmdGuardar.Text = "Guardar";
             this.cmdGuardar.UseVisualStyleBackColor = true;
+            this.cmdGuardar.Click += new System.EventHandler(this.cmdGuardar_Click);
             // 
             // cmdCancelar
             // 
-            this.cmdCancelar.Location = new System.Drawing.Point(212, 191);
+            this.cmdCancelar.Location = new System.Drawing.Point(285, 176);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(75, 23);
             this.cmdCancelar.TabIndex = 7;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
-            // 
-            // cmdMenu
-            // 
-            this.cmdMenu.Location = new System.Drawing.Point(293, 191);
-            this.cmdMenu.Name = "cmdMenu";
-            this.cmdMenu.Size = new System.Drawing.Size(75, 23);
-            this.cmdMenu.TabIndex = 8;
-            this.cmdMenu.Text = "Menu";
-            this.cmdMenu.UseVisualStyleBackColor = true;
-            this.cmdMenu.Click += new System.EventHandler(this.cmdMenu_Click);
             // 
             // dateTimePicker1
             // 
@@ -205,25 +211,43 @@
             this.dateTimePicker1.TabIndex = 9;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // lstLista
+            // 
+            this.lstLista.FormattingEnabled = true;
+            this.lstLista.Location = new System.Drawing.Point(6, 226);
+            this.lstLista.Name = "lstLista";
+            this.lstLista.Size = new System.Drawing.Size(367, 69);
+            this.lstLista.TabIndex = 10;
+            // 
+            // lblCompra
+            // 
+            this.lblCompra.AutoSize = true;
+            this.lblCompra.Location = new System.Drawing.Point(7, 210);
+            this.lblCompra.Name = "lblCompra";
+            this.lblCompra.Size = new System.Drawing.Size(0, 13);
+            this.lblCompra.TabIndex = 11;
+            // 
             // frmCargaDeDatosEnLaAlacena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 226);
+            this.ClientSize = new System.Drawing.Size(380, 299);
+            this.Controls.Add(this.lblCompra);
+            this.Controls.Add(this.lstLista);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.cmdMenu);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdGuardar);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.chkCaduca);
+            this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.mrcProductosPara);
+            this.Controls.Add(this.cboProducto);
+            this.Controls.Add(this.lblProducto);
+            this.Controls.Add(this.mrcLugar);
             this.Name = "frmCargaDeDatosEnLaAlacena";
             this.Text = "Cargar productos en la alacena";
-            this.mrcProductosPara.ResumeLayout(false);
-            this.mrcProductosPara.PerformLayout();
+            this.Load += new System.EventHandler(this.frmCargaDeDatosEnLaAlacena_Load);
+            this.mrcLugar.ResumeLayout(false);
+            this.mrcLugar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -232,20 +256,21 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox mrcProductosPara;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.GroupBox mrcLugar;
+        private System.Windows.Forms.RadioButton optLimpieza;
+        private System.Windows.Forms.RadioButton optAlacena;
+        private System.Windows.Forms.RadioButton optMedicamentos;
+        private System.Windows.Forms.RadioButton optBaño;
+        private System.Windows.Forms.Label lblProducto;
+        private System.Windows.Forms.ComboBox cboProducto;
+        private System.Windows.Forms.RadioButton optHeladera;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.CheckBox chkCaduca;
         private System.Windows.Forms.Button cmdGuardar;
         private System.Windows.Forms.Button cmdCancelar;
-        private System.Windows.Forms.Button cmdMenu;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ListBox lstLista;
+        private System.Windows.Forms.Label lblCompra;
     }
 }

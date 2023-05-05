@@ -12,6 +12,7 @@ namespace PYSP1MipriiAPP
 {
     public partial class frmCargaDeDatosEnLaAlacena : Form
     {
+        string varProducto
         public frmCargaDeDatosEnLaAlacena()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace PYSP1MipriiAPP
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void cmdMenu_Click(object sender, EventArgs e)
@@ -33,6 +34,16 @@ namespace PYSP1MipriiAPP
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCargaDeDatosEnLaAlacena_Load(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void cmdGuardar_Click(object sender, EventArgs e)
         {
 
         }

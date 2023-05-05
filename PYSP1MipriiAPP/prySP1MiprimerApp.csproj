@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9D4094BB-4654-4D37-8C50-C6BB777757D6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PYSP1MipriiAPP</RootNamespace>
-    <AssemblyName>PYSP1MipriiAPP</AssemblyName>
+    <RootNamespace>prySP1MiprimerAPP</RootNamespace>
+    <AssemblyName>prySP1MiprimerAPP</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -86,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
